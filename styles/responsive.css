@@ -1,0 +1,47 @@
+/* responsive.css */
+@media screen and (min-width:600px) {
+    /* 1행 글자크기, 여백 등 */
+    #wrap .intro h1 span:nth-child(1) {line-height:1.7; font-size: 1.50rem;}
+    #wrap .intro h1 span:nth-child(2) {font-weight:600; font-size: 1.75rem;}
+    #wrap .intro h1 .name {font-weight:700; margin-top:30px; font-size: 1.50rem;}
+    /* 3행 프로젝트 이미지 */
+    #wrap .project_wrap .project .title_thum .mockup img {
+        height:auto;/* 100% 덮어쓰기 값으로 auto변경 */
+        width:100%;
+    }
+    /* 4행 그래픽 이미지 확대 */
+    #wrap .project_wrap .graphic_wrap .graphic_container a {width:246px; height:400px;}
+}/* 사용자가 보는 기기 너비가 600보다 크면 */
+@media screen and (min-width:840px) {
+    /* 2행 info -> 1행 2열 레이아웃 구조 변경 */
+    #wrap .info {display: flex; gap:20px;}
+    #wrap .info .profile {padding: 155px 0; height: auto;}
+    #wrap .info .profile .photo {
+        width:293px; height:315px;
+    }
+    #wrap .info .profile .skill_list {width:400px;}
+    #wrap .info .details {display:block; padding: 247px 0;}
+    #wrap .info .details dl {margin-bottom:20px;}
+    #wrap .info .details dl dt {font-size:1.25rem; font-weight:700; margin-bottom:20px;}
+    #wrap .info .details dl dd {line-height:1.7;}
+    /* 3행 web -> 1행 2열 레이아웃 구조 변경 */
+    #wrap .project_wrap h1 {font-size:2rem;}
+    #wrap .project_wrap .project {width:100%; display:flex; gap:40px;}
+    #wrap .project_wrap .project .title_thum h2 {font-size:1.50rem; text-align:left;}
+    #wrap .project_wrap .project .title_thum {width:60%;}
+    #wrap .project_wrap .project .title_thum .mockup img {
+    height:auto;/* 100% 덮어쓰기 값으로 auto변경 */
+    width:100%;
+    }
+    #wrap .project_wrap .project .title_thum .mockup img {}
+    #wrap .project_wrap .project .detail {display:flex; flex-flow:column nowrap; justify-content: end; align-items: flex-start; width:40%;}
+    #wrap .project_wrap .project .detail .project_info li {font-size:1rem;}
+    #wrap .project_wrap .project .detail .plan {font-size:1rem;}
+    #wrap .project_wrap .project .detail .link {margin: 50px 0 0 0}
+    #wrap .project_wrap .project .detail .link a {
+        font-size:1rem; color: #fff; border-radius:10px;
+        padding: 20px 55px;
+    }
+    /* 4행 그래픽 이미지 확대 */
+    #wrap .project_wrap h1+p {font-size:1rem;}
+}/* 사용자가 보는 기기 너비가 840보다 크면 */
